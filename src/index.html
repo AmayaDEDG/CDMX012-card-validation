@@ -6,9 +6,53 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+    <header>a.atra</header>
+    <main>
+      <div id="container">
+        <h1>Por favor, ingrese el número de su tarjeta:</h1>
+        <form action="#">
+          <div class="cardNumbers">
+            <label>
+              <input type="password" id="cardNumber1" class="numbers" inputmode="numeric" maxlength="4" pattern="\d{4,4}" required title="Ingrese al menos 4 números" onkeyup="this.value=this.value.replace(/[\D]/,'')">
+            </label>
+            <label>
+              <input type="password" id="cardNumber2" class="numbers" inputmode="numeric" maxlength="4"  pattern="\d{4,4}" required title="Ingrese al menos 4 números" onkeyup="this.value=this.value.replace(/[\D]/,'')">
+            </label>
+            <label>
+              <input type="password" id="cardNumber3" class="numbers" inputmode="numeric" maxlength="4"  pattern="\d{4,4}" required title="Ingrese al menos 4 números" onkeyup="this.value=this.value.replace(/[\D]/,'')">
+            </label>
+            <label>
+              <input type="text" id="cardNumber4" class="numbers" inputmode="numeric" maxlength="4"  pattern="\d{4,4}" required title="Ingrese al menos 4 números" onkeyup="this.value=this.value.replace(/[\D]/,'')">
+            </label>
+            <br> <br>
+            <div class="buttons">
+              <label>
+                <input type="submit" id="validateCard"  value="Validar tarjeta">
+              </label>
+              <button id="seePassword"> <i class="fas fa-eye" ></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="modalBoxValid" class="modal">
+        <div id="modalContentV" class="modalContent">
+          <span id="closeV" class="close">&times;</span>
+          <p>Su tarjeta ha sido registrada exitosamente.</p>
+        </div>
+      </div>
+      <div id="modalBoxInvalid" class="modal">
+        <div id="modalContentI" class="modalContent">
+          <span id="closeI" class="close">&times;</span>
+          <p>Lo sentimos, su tarjeta es inválida.<br> Intente nuevamente.</p>
+        </div>
+      </div>
+      <div class="extra">
+        <p>a.atra</p>
+        <i id="menuIcon" class="fas fa-bars"></i>
+      </div>
+    </main>
+    <footer>Amaya De Esesarte <br> amaya.dedg@gmail.com</footer>
+    <script src="index.js" type="module"></script> 
+    <script src="https://kit.fontawesome.com/6f67727d58.js" crossorigin="anonymous"></script>
   </body>
 </html>

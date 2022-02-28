@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@100;300&display=swap');
+
+:root{
+  background: rgb(1,33,62);
+  background: linear-gradient(0deg, rgb(1, 17, 62) 0%, rgb(0, 79, 116) 51%, rgba(0,137,167,1) 100%);
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#container {
+  text-align: center;
+  padding: 100px;
+  position: relative;
+}
+
+header{
+  color: rgba(0, 145, 177, 0.418);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 90px;
+  letter-spacing: 4px;
+  position: absolute;
+  bottom: 80px; 
+  right: 60px; 
+  text-shadow: 1px 5px 18px #00224e;
+}
+
+h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1.5px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 23px;
+}
+
+footer {
+  color: rgba(160, 160, 160, 0.459);
+  background-color: rgb(1, 12, 49);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+  padding-left: 45%;
+  padding-right: 43%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.numbers {
+  width: 7%;
+  height: 40px;
+  background-color: #afafaf;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+#cardNumber1 {
+  margin-left: 0px;
+}
+
+.cardNumbers{
+  display: inline; 
+}
+
+#seePassword{
+  background-color: rgb(1, 26, 49);
+  color: rgba(255, 255, 255, 0.747);
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+#validateCard{
+  background-color: rgb(1, 26, 49);
+  color: rgba(255, 255, 255, 0.747);
+  font-family:"Roboto";
+  letter-spacing: 1px;
+  font-size: 18px;
+  padding: 11px 25px 12px 25px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.buttons {
+  display: inline-flex;
+  margin-top: 5px;
+}
+
+.extra{
+  font-family: "Noto Sans";
+  color: rgba(255, 255, 255, 0.747);
+  background-color: rgba(1, 12, 49, 0.815);
+  float: left;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 0px 20px 15px 20px;
+  text-align: center;
+  font-size: 15px;
+}
+
+#menuIcon{
+font-size: 180%;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modalContent {
+  background-color: #dadada;
+  margin: auto;
+  margin-top: 8%;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  font-family: "Noto Sans";
+  text-align: center;
+  font-size: 20px;
+}
+
+.close {
+  color: #7d7d7d;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
